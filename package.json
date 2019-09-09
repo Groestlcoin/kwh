@@ -1,5 +1,5 @@
 {
-  "name": "kwh",
+  "name": "kwh-grs",
   "private": true,
   "license": "MIT",
   "browserify": {

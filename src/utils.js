@@ -106,7 +106,7 @@ export function formatmsat(msatoshis) {
   for (let prec = 3; prec >= 0; prec--) {
     let dec = 10 ** prec
     if (msatoshis / dec === parseInt(msatoshis / dec)) {
-      return `${(msatoshis / 1000).toFixed(3 - prec)} sat`
+      return `${(msatoshis / 1000).toFixed(3 - prec)} gro`
     }
   }
 }

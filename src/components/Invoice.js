@@ -19,7 +19,7 @@ export default function Invoice() {
   let [invoiceData, setInvoiceData] = useState(action.invoiceData)
   let [satoshis, setSatoshis] = useState(action.amount || defaultAmount)
   let [desc, setDesc] = useState(
-    action.defaultMemo || (action.origin ? action.origin.domain : `kWh invoice`)
+    action.defaultMemo || (action.origin ? action.origin.domain : `kWh-GRS invoice`)
   )
   let [invoicePaid, setInvoicePaid] = useState(false)
 
@@ -104,7 +104,7 @@ export default function Invoice() {
             ) : (
               <input
                 className={inputClasses + ' ml1 mr1 bn bg-transparent w3'}
-                value={satoshis}
+                value={gro}
                 onChange={e => setSatoshis(e.target.value)}
                 step="10"
                 min={action.minimumAmount || 1}

@@ -20,16 +20,12 @@
 - Instant notifications on received payments;
 - No window popups, all interactions happen in the `browserAction` popup.
 
-<p align="center">
-  <img src="screenshots/withdraw-checkmark-tippin.gif" width="400" />
-</p>
-
 ## Requirements
 
 Either
 
-  * a [lightningd](https://github.com/ElementsProject/lightning/) node with a [Spark](https://github.com/shesek/spark-wallet) [RPC server](https://github.com/fiatjaf/sparko) in front of it;
-  * an [Eclair](https://github.com/ACINQ/eclair) node with the [API](https://github.com/ACINQ/eclair#configuring-eclair) enabled and accessible;
+  * a [lightningd](https://github.com/groestlcoin/lightning/) node with a [Spark](https://github.com/groestlcoin/groestlcoin-spark) in front of it;
+  * an [Eclair](https://github.com/groestlcoin/eclair) node with the [API](https://github.com/groestlcoin/eclair#configuring-eclair) enabled and accessible;
   * a [Ptarmigan](https://github.com/nayutaco/ptarmigan) node with the [REST API Node.js app](https://github.com/nayutaco/ptarmigan/blob/master/docs/howtouse_rest_api.md) running.
 
 ### Caveats
@@ -39,7 +35,7 @@ Either
 
 ## Build instructions
 
-You'll need: Node.js>=10, npm, Make
+You'll need: Node.js>=10, npm, Make, moreutils, zip and imagemagick
 
 ```
 npm install

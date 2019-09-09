@@ -63,7 +63,7 @@ export function summary() {
   })
 }
 
-export function pay(bolt11, msatoshi, description = 'unnamed kWh invoice') {
+export function pay(bolt11, msatoshi, description = 'unnamed kWh-GRS invoice') {
   if (!msatoshi) msatoshi = undefined
 
   return rpcCall('pay', {
