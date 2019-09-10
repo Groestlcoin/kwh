@@ -92,7 +92,7 @@ if (document) {
   window.addEventListener('message', ev => {
     // only accept messages from the current window
     if (ev.source !== window) return
-    if (!ev.data || ev.data.application !== 'kWh' || ev.data.response) return
+    if (!ev.data || ev.data.application !== 'kWh-GRS' || ev.data.response) return
 
     let origin = getOriginData()
 
@@ -125,7 +125,7 @@ if (document) {
           })
         } else {
           // default: an action or prompt
-          console.log(`[kWh]: ${type} ${structuredprint(extra)} ${structuredprint(origin)}`)
+          console.log(`[kWh-GRS]: ${type} ${structuredprint(extra)} ${structuredprint(origin)}`)
 
           switch (type) {
             case REQUEST_GETINFO:
@@ -149,7 +149,7 @@ if (document) {
       })
       .then(response => {
         window.postMessage(
-          {response: true, application: 'kWh', data: response},
+          {response: true, application: 'kWh-GRS', data: response},
           '*'
         )
       })
@@ -157,7 +157,7 @@ if (document) {
         window.postMessage(
           {
             response: true,
-            application: 'kWh',
+            application: 'kWh-GRS',
             error: err ? err.message || err : err
           },
           '*'

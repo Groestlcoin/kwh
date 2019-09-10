@@ -17,7 +17,7 @@ export default function Invoice() {
   let amountFixed = !!action.amount
 
   let [invoiceData, setInvoiceData] = useState(action.invoiceData)
-  let [satoshis, setSatoshis] = useState(action.amount || defaultAmount)
+  let [gro, setSatoshis] = useState(action.amount || defaultAmount)
   let [desc, setDesc] = useState(
     action.defaultMemo || (action.origin ? action.origin.domain : `kWh-GRS invoice`)
   )
@@ -49,7 +49,7 @@ export default function Invoice() {
       .sendMessage({
         tab,
         rpc: {
-          makeInvoice: [satoshis * 1000, desc.replace(/&nbsp;/g, '').trim()]
+          makeInvoice: [gro * 1000, desc.replace(/&nbsp;/g, '').trim()]
         },
         behaviors: {
           success: [
@@ -111,7 +111,7 @@ export default function Invoice() {
                 max={action.maximumAmount || Infinity}
               />
             )}
-            satoshis described as{' '}
+            gro described as{' '}
             <ContentEditable
               innerRef={contentEditable}
               html={desc}

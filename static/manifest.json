@@ -2,12 +2,12 @@
   "id": "kwh-grs",
   "applications": {
     "gecko": {
-      "id": "groestlciin@gmail.com",
+      "id": "groestlcoin@gmail.com",
       "strict_min_version": "57.0"
     }
   },
   "manifest_version": 2,
-  "name": "kWh",
+  "name": "kWh-GRS",
   "description": "Send and receive Groestlcoin Lightning payments in the browser with c-lightning, Groestlcoin Eclair or Ptarmigan.",
   "version": "0.5.3",
   "author": "groestlcoin developers",
