@@ -5,8 +5,8 @@
 <p align="center">The companion browser extension for c-lightning, Eclair and Ptarmigan nodes.</p>
 
 <p align="center">
-  <a href="https://addons.mozilla.org/firefox/addon/kwh/"><img src="https://i.imgur.com/aNCB2LG.png" alt="Install for Firefox" width="215" style="max-width:100%;"></a>
-  <a href="https://chrome.google.com/webstore/detail/kwh/mbjlodgfcaknfbphnnfioilcnippdnjp"><img src="https://i.imgur.com/kWBQU9Q.png" alt="Install for Chrome" width="215" style="max-width:100%;"></a>
+  <a href="https://addons.mozilla.org/nl/firefox/addon/kwh-grs/"><img src="https://i.imgur.com/aNCB2LG.png" alt="Install for Firefox" width="215" style="max-width:100%;"></a>
+  <a href="https://chrome.google.com/webstore/detail/kwh-grs/iebmpfpngpnpofkdfndlnmachjjnkghl"><img src="https://i.imgur.com/kWBQU9Q.png" alt="Install for Chrome" width="215" style="max-width:100%;"></a>
 </p>
 
 ## Features
